@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Cancer Prediction
+</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+body{
+    background-color:#e8d5e1;               
+}
+.label{
+    font-size: 20px;
+}
+.field{
+    font-size: 20px;
+    width:50%
+}
+        .subfield{ 
+            font-size:15px;
+            color:#FF0060;
+        }
+div{
+    padding:10px;
+    margin-top:10px;
+    margin-left:32%;
+}
+h1{
+    color:#1F6E8C;
+    text-align:center;
+    margin-top:50px;
+    font-size:40px;
+}
+#button{
+    background-color:#1F6E8C;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:20px;
+    border-radius:5px;
+    color:white;
+    margin-left:20%;
+}
+    </style>
+    <body>
+        <form action="{{url_for("get_value")}}" method="POST">
+         
+    <h1>Lungs Cancer Prediction </h1>
+    <br>
+<div>
+    <label for="GENDER" class='label'><b>GENDER : </b></label>
+    <br>
+    <input type="text" class="field" placeholder="0-1" name="GENDER" id="GENDER" required>
+    <br>
+<br>
+    <br>
+    
+    <label for="AGE" class='label'><b>AGE</b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1-100" name="AGE" id="AGE" required>
+    <br>
+    
+<br>
+    <br>
+    
+    <label for="SMOKING" class='label'><b>SMOKING : </b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1-2" name="SMOKING" id="SMOKING" required>
+    <br>
+    
+<br>
+    <br>
+    
+    <label for="YELLOW_FINGERS" class='label'><b>YELLOW_FINGERS</b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1-2" name="YELLOW_FINGERS" id="YELLOW_FINGERS" required>
+    <br>
+    
+<br>
+    
+<br>
+    <br>
+    
+    <label for="ANXIETY" class='label'><b>ANXIETY</b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1-2" name="ANXIETY" id="ANXIETY" required>
+    <br>
+    
+<br>
+    
+<br>
+    <br>
+    
+    <label for="PEER_PRESSURE" class='label'><b>PEER_PRESSURE</b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1-2" name="PEER_PRESSURE" id="PEER_PRESSURE" required>
+    <br>
+    
+<br>
+    
+    <br>
+    <br>
+
+    <label for="FATIGUE" class='label'><b>FATIGUE</b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1-2" name="FATIGUE" id="FATIGUE" required>
+    <br>
+    
+<br>
+    
+    <br>
+    <br>
+
+    <label for="ALLERGY" class='label'><b>ALLERGY</b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1-2" name="ALLERGY" id="ALLERGY" required>
+    <br>
+    
+<br>
+    
+    <br>
+    <br>
+    <label for="WHEEZING" class='label'><b>WHEEZING</b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 0-6" name="WHEEZING" id="WHEEZING" required>
+    <br>
+    
+<br>
+    
+    <br>
+    <br>
+
+
+    <label for="COUGHING" class='label'><b>COUGHING</b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1-2" name="COUGHING" id="COUGHING" required>
+    <br>
+    
+<br>
+    
+    <br>
+    <br>
+
+
+
+
+    <button type="submit" id="button">Submit</button> 
+</div>  
+</form>
+
+    </body>
+</html>
